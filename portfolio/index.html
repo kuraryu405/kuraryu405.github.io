@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>くらりゅのportfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
+            <!-- logo - start -->
+            <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl" aria-label="logo">
+                <img src="kuraryu.png" class="h-auto w-14 text-indigo-500">      
+              Kuraryu
+            </a>
+            <!-- logo - end -->
+      
+            <!-- nav - start -->
+            <nav class="hidden gap-12 lg:flex">
+              <a href="#about" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+              <a href="#skill" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Skill</a>
+              <a href="#blongs" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Blongs</a>
+            </nav>
+            <!-- nav - end -->
+      
+          </header>
+      
+          <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+            <!-- image - start -->
+            <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+              <img src="kuraryubrock.jpg" loading="lazy" alt="kuraryu-icon" class="h-full w-full object-cover object-center" />
+            </div>
+            <!-- image - end -->
+            <!-- content - start -->
+            <div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+              <p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">A future you've never experienced beyond the period.</p>
+      
+              <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Hello World!</h1>
+      
+              <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-5/5 xl:text-lg">長野県にすむしがない高校生。<br>趣味はパソコンとスマホとカメラなどガジェット系です！<br>最近メインPCを自作して幸せホカホカなのでスペックマウントは取らないでください!<br>ガジェット以外にも吹奏楽が好きで市の吹奏楽団でユーフォニアムを吹いたりしてます！</p>
+            </div>
+            <!-- content - end -->
+          </section>
+        </div>
+    </div>
+    
+    <!--belongs-->
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <h2 class="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">Blongs</h2>
+            <div class="justify-center grid gap-4 sm:grid-cols-2 md:gap-6 w-2/4">    
+                <!-- product - start -->
+                <div>
+                    <a href="https://tgr.jp" class="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg justify-center">
+                        <div  loading="lazy" alt="Photo by engin akyurt" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 841.6 501.61" class={classSvg}>
+                                <g class={classT}>
+                                    <path d="M386.848 9.007c-33.8 22-54.4 35.3-59.5 38.6-27.4 17.5-63.5 41.3-63.5 41.9 0 .9 14.7 11.7 43 31.6 12.4 8.7 26.8 18.8 32 22.5 5.2 3.7 17.4 12.2 27 19 9.6 6.8 21.5 15.2 26.4 18.7 5 3.5 9.5 6.2 10.2 5.9.6-.2 7.3-4.4 14.8-9.3 7.5-4.8 16.7-10.8 20.6-13.3 16.1-10.4 72.7-47.2 86.5-56.2 8.3-5.4 15-10.3 15-11 0-.6-4.5-4.4-10-8.3-9-6.4-47.7-33.7-63-44.4-3.3-2.3-10-7.1-15-10.6-4.9-3.5-12.1-8.6-16-11.3-3.8-2.6-12.6-8.8-19.5-13.6-6.9-4.9-12.9-9-13.5-9.2-.5-.2-7.5 3.8-15.5 9Z" />
+                                    <path d="M253.148 103.907c-.5.6-4.7 12.7-9.3 26.7-4.5 14-8.5 26-8.7 26.5-.2.6 6.7 6 15.3 12 8.5 6.1 17.7 12.6 20.4 14.5 2.7 1.9 10.2 7.2 16.7 11.8 35 24.6 53.1 37.7 55.5 40 2.1 2 4.6 8.2 10.2 24.7 21 61.8 34.7 100.1 36.3 101.2.9.7 2 1 2.4.6.4-.5 1-20.4 1.3-44.3.4-23.9 1.1-59.7 1.7-79.5l1-35.9-2.7-2.1c-2.8-2-36.7-26-60.9-43-7.1-5-21.5-15.1-32-22.5-15.7-11.1-42.7-29.8-45.5-31.5-.4-.3-1.2.1-1.7.8Z" />
+                                    <path d="M505.348 137.107c-23.1 15-53.6 34.9-67.8 44.1-14.3 9.2-26 17.2-26.2 17.8-.2.6-1 36.4-1.8 79.6-1 56.6-1.1 78.8-.3 79.7.8.9 5.6-1.8 19.6-10.9 10.2-6.6 21.1-13.6 24.2-15.6 6.6-4.2 3.4 3.6 26.8-65.6 8.3-24.7 15.8-45.9 16.6-47 1.7-2.4 6.8-6.2 25.9-18.9 12.5-8.4 41.5-27.4 46.2-30.3 1.7-1.1 1.4-2.5-5-21.1-3.7-10.9-8.2-24.1-10-29.3-2-6-3.8-9.6-4.7-9.7-.8-.1-20.4 12.1-43.5 27.2Z" />
+                                </g>
+                                <g class={classG}>
+                                    <path d="M621.848 146.407c-26.7 17.4-36.3 23.7-67 43.6-31.8 20.5-44 28.6-44 29 0 .5 26.4 19.7 48 34.9 9.1 6.4 23.9 16.8 33 23.2 44.9 31.7 53.7 37.8 55.7 38.7 2.4 1.2 2.5 1.1 33.3-19 16.2-10.5 34.3-22.3 79.3-51.3 14.7-9.6 26.7-17.9 26.7-18.6 0-.7-3.3-3.5-7.2-6.3-6.9-4.8-16.1-11.3-49.6-34.9-8.1-5.7-19-13.4-24.2-17.1-5.2-3.6-16.5-11.6-25-17.6-24.3-17.3-30.5-21.4-32.1-21.3-.8 0-12.9 7.5-26.9 16.7Z" />
+                                    <path d="M500.248 233.807c-1.6 2.5-43.1 129.3-42.7 130.3.2.5 5.7 4.7 12.1 9.2 17.5 12.2 58.4 41 77.7 54.6 9.4 6.6 20.2 14.2 24 16.9 3.9 2.7 14.8 10.4 24.3 17.1 35.7 25.3 42.1 29.7 43 29.7 1.2 0 1.9-21.3 3.3-98.4.5-34 .7-62.2.2-62.6-.4-.4-19.2-13.7-41.8-29.5-22.5-15.9-48.6-34.2-58-40.8-22.6-16-38.3-26.7-40-27.3-.7-.3-1.7 0-2.1.8Z" />
+                                    <path d="M785.248 245.607c-6 3.8-15.9 10.2-22.1 14.2-13.5 8.8-31.9 20.7-71.8 46.6-16.5 10.7-30.7 20.1-31.6 20.8-1.4 1.3-1.7 7.8-2.3 57.2-.3 30.6-.9 66.6-1.3 79.9-.5 20.4-.4 24.3.8 24.3.8 0 8.6-4.7 17.4-10.5 8.8-5.7 25.7-16.6 37.5-24.3 11.8-7.7 37.3-24.2 56.5-36.7 19.3-12.5 43.1-27.9 53-34.3 9.9-6.3 18.6-12.1 19.3-12.7 1.8-1.7 4.3 5.9-26.2-81.9-8.6-24.7-15.6-45.5-15.6-46.1 0-.7-.6-1.8-1.3-2.4-1.1-.8-3.9.5-12.3 5.9Z" />
+                                </g>
+                                <g class={classR}>
+                                    <path d="M167.848 153.707c-19.6 12.8-50.8 33-94 61-9.1 5.9-17.6 11.5-18.9 12.6l-2.4 2 4.6 3.4c13.6 10.1 32.7 23.6 100.7 71.4 8 5.6 18.5 13 23.4 16.4 4.9 3.5 9.6 6.1 10.5 5.8.9-.2 21.2-13.1 45.1-28.7 39.4-25.5 52.4-34 81.9-53.3 5.2-3.4 9.6-6.7 9.8-7.3.4-1.1-3.7-4.1-27.7-20.9-13-9.1-46.4-32.7-90-63.5-9.6-6.8-18.4-12.5-19.5-12.6-1.2-.2-10.2 5-23.5 13.7Z" />
+                                    <path d="M37.648 256.307c-36.4 109-39.1 117.7-37.2 119.1 1.1.8 10.2 7.2 20.4 14.4 18.9 13.2 36.5 25.6 67.9 47.8 9.8 6.9 24.2 17 32 22.5 7.8 5.5 20.6 14.6 28.5 20.1 22.5 16 30.5 21.4 31.6 21.4.5 0 1-1.9 1-4.3 0-2.3.7-38.2 1.5-79.7 1-54.1 1.1-75.8.3-76.7-1-1.3-8.9-6.9-63.3-45.2-12.1-8.5-25.8-18.2-30.5-21.5-23.7-16.7-45.6-31.6-46.5-31.6-.6 0-3.2 6.2-5.7 13.7Z" />
+                                    <path d="M323.248 257.907c-7.7 5-16 10.5-18.5 12.1-22.9 14.7-82.9 53.8-92.4 60.1l-12 8-.6 35c-1.9 107.4-2 125.5-.7 125.4.7 0 10.4-6 21.5-13.2 11.1-7.3 29.6-19.3 41-26.7 11.5-7.4 37.7-24.4 58.3-37.8 20.6-13.4 43.2-28.1 50.2-32.6 7-4.4 12.9-8.7 13.2-9.3.3-.7-6-20.1-14-43-8-23-17.9-51.6-21.9-63.6-7.7-22.5-8.1-23.7-9.3-23.7-.4 0-7 4.2-14.8 9.3Z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="relative flex w-full flex-col rounded-lg bg-white p-4 text-center">
+                            <span class="text-gray-500">Manager</span>
+                            <span class="text-lg font-bold text-gray-800 lg:text-xl">TGR Group</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- product - end -->
+                <!-- product - start -->
+                <div>
+                    <a href="#" class="group relative flex h-96 items-end overflow-hidden rounded-lg bg-gray-100 p-4 shadow-lg">
+                        <img src="teknotes.jpg" loading="lazy" alt="Photo by Austin Wade" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                        <div class="relative flex w-full flex-col rounded-lg bg-white p-4 text-center">
+                            <span class="text-gray-500">Member</span>
+                            <span class="text-lg font-bold text-gray-800 lg:text-xl">TEKUNOTES</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- product - end -->
+            </div>
+      </div>
+    </div>
+      </div>
+    </div>
+</body>
+</html>
