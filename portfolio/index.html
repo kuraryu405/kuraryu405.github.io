@@ -8,40 +8,67 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
-            <!-- logo - start -->
-            <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl" aria-label="logo">
-                <img src="kuraryu.png" class="h-auto w-14 text-indigo-500">      
-              Kuraryu
-            </a>
-            <!-- logo - end -->
-      
-            <!-- nav - start -->
-            <nav class="hidden gap-12 lg:flex">
-              <a href="#about" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
-              <a href="#skill" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Skill</a>
-              <a href="#blongs" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Belongs</a>
-            </nav>
-            <!-- nav - end -->
+  <div class="navbar bg-base-100">
+    <div class="flex-none">
+      <div class="drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+          <!-- Page content here -->
+          <label for="my-drawer" class="btn btn-ghost drawer-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> 
+          </label>
+        </div> 
+        <div class="drawer-side">
+          <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+          <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+            <!-- Sidebar content here -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Myskill</a></li>
+            <li><a href="#blongs">Belongs</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    <div class="flex-1">
+      <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl" aria-label="logo">
+        <img src="kuraryu.png" class="h-auto w-14 text-indigo-500 ">      
+      Kuraryu
+    </a>
+    </div>
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+      </button>
+    </div>
+  </div>  
+
+
       
           </header>
       
-          <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
-            <!-- image - start -->
-            <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
-              <img src="kuraryubrock.jpg" loading="lazy" alt="kuraryu-icon" class="h-full w-full object-cover object-center" />
-            </div>
-            <!-- image - end -->
-            <!-- content - start -->
-            <div id="about" class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+          <section class="flex flex-col  gap-6 sm:gap-10 md:gap-0 lg:flex-row">
+            <div class="">
+              <div id="about" class="ml-20 flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
      
-              <h2 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Hello World!</h2>
+              <h2 class="justify-center text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl"><img src="kuraryu.png" class="justify-center h-5/12 w-auto shadow-lg lg:h-5/12 xl:w-auto rounded-full">Hello World!</h2>
       
-              <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-5/5 xl:text-lg">長野県にすむしがない高校生。<br>趣味はパソコンとスマホとカメラなどガジェット系です！<br>最近メインPCを自作して幸せホカホカなのでスペックマウントは取らないでください!<br>ガジェット以外にも吹奏楽が好きで市の吹奏楽団でユーフォニアムを吹いたりしてます！</p>
+              <p class="justify-center leading-relaxed text-gray-500 md:mb-12 lg:w-5/5 xl:text-lg">長野県にすむしがない高校生。<br>趣味はパソコンとスマホとカメラなどガジェット系です！<br>最近メインPCを自作して幸せホカホカなのでスペックマウントは取らないでください!<br>ガジェット以外にも吹奏楽が好きで市の吹奏楽団でユーフォニアムを吹いたりしてます！</p>
               <p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">A future you've never experienced beyond the period.</p>
+             </div>
             </div>
+            <div class="ml-50 mb-12 flex w-auto md:mb-16 lg:w-2/3">
+                <img src="https://images.unsplash.com/photo-1542340916-951bb72c8f74?auto=format&q=75&fit=crop&w=550&h=550" loading="lazy" alt="Photo by Kaung Htet" class="mt-20 ml-5 h-2/3 w-auto object-cover object-center rounded-lg shadow-lg" />
+      
+                <img src="https://images.unsplash.com/photo-1586295166487-b265f7e83a7f?auto=format&q=75&fit=crop&w=550&h=550" loading="lazy" alt="Photo by Manny Moreno" class="mr-30 h-2/3 w-auto object-cover object-center rounded-lg shadow-lg" />
+              </div>
+            </div>
+          </div>
+            
             <!-- content - end -->
           </section>
         </div>
@@ -176,7 +203,7 @@
             <img
               alt="mainpc"
               src="main.jpg"
-              class="absolute inset-0 h-full w-full object-cover"
+              class="rounded-lg absolute inset-0 h-full w-full object-cover"
             />
           </div>
     
@@ -209,7 +236,7 @@
           <img
             alt="mainnotepc"
             src="mainnote.jpg"
-            class="absolute inset-0 h-full w-full object-cover"
+            class="rounded-lg absolute inset-0 h-full w-full object-cover"
           >
         </div>
   
@@ -249,7 +276,7 @@
         >
           <span class="inline-block rounded-lg bg-white p-3">
             <div class="h-24 w-24">
-              <img src="x.jpg">
+              <img src="x.jpg" class="rounded-full">
             </div>
           </span>
 
