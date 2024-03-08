@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* 追加のスタイル */
         body {
             font-family: 'Roboto', sans-serif;
         }
@@ -29,152 +28,209 @@
         .hero p {
             font-size: 1.2rem;
         }
+
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-up 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+        .fade-in-visible {
+            opacity: 1;
+            transform: translateY(0);
+            animation: fade-in-up 1s ease-in-out;
+            animation-fill-mode: forwards;
+            }
+
     </style>
 </head>
 <body class="bg-gray-100">
-    <header class="bg-white shadow">
-        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-gray-800 text-xl font-bold">Kuraryu</a>
-            <div class="flex space-x-4">
-                <a href="#about" class="text-gray-600 hover:text-gray-800">About</a>
-                <a href="#skills" class="text-gray-600 hover:text-gray-800">Skills</a>
-                <a href="#belongs" class="text-gray-600 hover:text-gray-800">Belongs</a>
-            </div>
-        </nav>
-    </header>
+  <header class="bg-white shadow">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-gray-800 text-xl font-bold">Kuraryu</a>
+        <div class="flex space-x-4">
+            <a href="#about" class="text-gray-600 hover:text-gray-800">About</a>
+            <a href="#skills" class="text-gray-600 hover:text-gray-800">Skills</a>
+            <a href="#belongs" class="text-gray-600 hover:text-gray-800">Belongs</a>
+        </div>
+    </nav>
+</header>
 
-    <div class="hero">
-        <div class="container mx-auto px-4">
-            <h1>Hello World!</h1>
-            <p>長野県にすむしがない高校生。趣味はパソコンとスマホとカメラなどガジェット系です！</p>
+<div class="hero">
+    <div class="container mx-auto px-4">
+        <h1>Hello World!</h1>
+        <p>長野県にすむしがない高校生。趣味はパソコンとスマホとカメラなどガジェット系です！</p>
+    </div>
+</div>
+
+<section id="about" class="py-16 fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">About</h2>
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <img src="kuraryu.png" alt="Profile Picture" class="w-64 h-64 rounded-full mx-auto">
+            </div>
+            <div class="md:w-1/2">
+                <p class="text-gray-600 mb-4">最近メインPCを自作して幸せホカホカなのでスペックマウントは取らないでください!</p>
+                <p class="text-gray-600 mb-4">ガジェット以外にも吹奏楽が好きで市の吹奏楽団でユーフォニアムを吹いたりしてます！</p>
+            </div>
         </div>
     </div>
+</section>
 
-    <section id="about" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8">About</h2>
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-8 md:mb-0">
-                    <img src="kuraryu.png" alt="Profile Picture" class="w-64 h-64 rounded-full mx-auto">
-                </div>
-                <div class="md:w-1/2">
-                    <p class="text-gray-600 mb-4">最近メインPCを自作して幸せホカホカなのでスペックマウントは取らないでください!</p>
-                    <p class="text-gray-600 mb-4">ガジェット以外にも吹奏楽が好きで市の吹奏楽団でユーフォニアムを吹いたりしてます！</p>
-                </div>
+<section id="skills" class="py-16 bg-white fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">My Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <img src="1024px-HTML5.png" alt="HTML5" class="w-24 h-24 mx-auto mb-4">
+                <h3 class="text-lg font-bold">HTML</h3>
+            </div>
+            <div class="text-center">
+                <img src="CSS3_logo..png" alt="CSS3" class="w-24 h-24 mx-auto mb-4">
+                <h3 class="text-lg font-bold">CSS</h3>
+            </div>
+            <div class="text-center">
+                <img src="php.png" alt="PHP" class="w-24 h-24 mx-auto mb-4">
+                <h3 class="text-lg font-bold">PHP</h3>
+            </div>
+            <div class="text-center">
+                <img src="mysql.png" alt="MySQL" class="w-24 h-24 mx-auto mb-4">
+                <h3 class="text-lg font-bold">MySQL</h3>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="skills" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">My Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <img src="1024px-HTML5.png" alt="HTML5" class="w-24 h-24 mx-auto mb-4">
-                    <h3 class="text-lg font-bold">HTML</h3>
-                </div>
-                <div class="text-center">
-                    <img src="CSS3_logo..png" alt="CSS3" class="w-24 h-24 mx-auto mb-4">
-                    <h3 class="text-lg font-bold">CSS</h3>
-                </div>
-                <div class="text-center">
-                    <img src="php.png" alt="PHP" class="w-24 h-24 mx-auto mb-4">
-                    <h3 class="text-lg font-bold">PHP</h3>
-                </div>
-                <div class="text-center">
-                    <img src="mysql.png" alt="MySQL" class="w-24 h-24 mx-auto mb-4">
-                    <h3 class="text-lg font-bold">MySQL</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="belongs" class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Belongs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <a href="https://tgrgroup.jp" class="block">
-                        <div class="relative h-48">
-                            <img src="tgr.svg" alt="TGR Group" class="absolute inset-0 w-full h-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">TGR Group</h3>
-                            <p class="text-gray-600">Manager</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <a href="https://tekunotes.com/" class="block">
-                        <div class="relative h-48">
-                            <img src="teknotes.jpg" alt="TEKUNOTES" class="absolute inset-0 w-full h-full object-cover">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xl font-bold mb-2">TEKUNOTES</h3>
-                            <p class="text-gray-600">Member</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">My PCs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="relative h-64">
-                        <img src="main.jpg" alt="Main PC" class="absolute inset-0 w-full h-full object-cover">
+<section id="belongs" class="py-16 fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Belongs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <a href="https://tgrgroup.jp" class="block">
+                    <div class="relative h-48">
+                        <img src="tgr.svg" alt="TGR Group" class="absolute inset-0 w-full h-full object-cover">
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Main PC</h3>
-                        <p class="text-gray-600">開発やネットサーフィンなどで使っている自作したメインPC</p>
-                        <p class="text-gray-600 mt-2">CPU: Core i5 13400<br>MEM: DDR4 32GB<br>ROM: SSD 1TB</p>
+                        <h3 class="text-xl font-bold mb-2">TGR Group</h3>
+                        <p class="text-gray-600">Manager</p>
                     </div>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="relative h-64">
-                        <img src="mainnote.jpg" alt="Main Note PC" class="absolute inset-0 w-full h-full object-cover">
+                </a>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <a href="https://tekunotes.com/" class="block">
+                    <div class="relative h-48">
+                        <img src="teknotes.jpg" alt="TEKUNOTES" class="absolute inset-0 w-full h-full object-cover">
                     </div>
                     <div class="p-4">
-                        <h3 class="text-xl font-bold mb-2">Main Note PC</h3>
-                        <p class="text-gray-600">学校や外での開発などに使うメインノートPC</p>
-                        <p class="text-gray-600 mt-2">CPU: Ryzen 7 5800H<br>MEM: DDR4 16GB<br>ROM: SSD 512GB</p>
+                        <h3 class="text-xl font-bold mb-2">TEKUNOTES</h3>
+                        <p class="text-gray-600">Member</p>
                     </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">My PCs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative h-64">
+                    <img src="main.jpg" alt="Main PC" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Main PC</h3>
+                    <p class="text-gray-600">開発やネットサーフィンなどで使っている自作したメインPC</p>
+                    <p class="text-gray-600 mt-2">CPU: Core i5 13400<br>MEM: DDR4 32GB<br>ROM: SSD 1TB</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="relative h-64">
+                    <img src="mainnote.jpg" alt="Main Note PC" class="absolute inset-0 w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Main Note PC</h3>
+                    <p class="text-gray-600">学校や外での開発などに使うメインノートPC</p>
+                    <p class="text-gray-600 mt-2">CPU: Ryzen 7 5800H<br>MEM: DDR4 16GB<br>ROM: SSD 512GB</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">SNS</h2>
-            <p class="text-gray-600 text-center mb-8">X（Twitter）、Githubをフォローしてください！<br>Discordのフレンド申請も歓迎です！</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <a href="https://twitter.com/kuraryukun_dayo" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
-                    <img src="x.jpg" alt="Twitter" class="w-24 h-24 rounded-full mb-4">
-                    <h3 class="text-xl font-bold mb-2">Twitter</h3>
-                    <p class="text-gray-600 text-center">x(Twotter)のアカウントです！よくつぶやいてます！</p>
-                </a>
-                <a href="https://github.com/kuraryu405" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
-                    <img src="GitHub.png" alt="GitHub" class="w-24 h-24 mb-4">
-                    <h3 class="text-xl font-bold mb-2">GitHub</h3>
-                    <p class="text-gray-600 text-center">公開リポジトリが少ないのであまり活動してないように見えますがちゃんとやってますよ！？</p>
-                </a>
-                <a href="https://discordapp.com/users/738375557271519233" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
-                    <img src="discord.png" alt="Discord" class="w-24 h-auto mb-4">
-                    <h3 class="text-xl font-bold mb-2">Discord</h3>
-                    <p class="text-gray-600 text-center">連絡がある場合はこちらでお願いします！</p>
-                </a>
-            </div>
+<section class="py-16 bg-gray-100 fade-in">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">SNS</h2>
+        <p class="text-gray-600 text-center mb-8">X（Twitter）、Githubをフォローしてください！<br>Discordのフレンド申請も歓迎です！</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <a href="https://twitter.com/kuraryukun_dayo" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img src="x.jpg" alt="Twitter" class="w-24 h-24 rounded-full mb-4">
+                <h3 class="text-xl font-bold mb-2">Twitter</h3>
+                <p class="text-gray-600 text-center">x(Twotter)のアカウントです！よくつぶやいてます！</p>
+            </a>
+            <a href="https://github.com/kuraryu405" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img src="GitHub.png" alt="GitHub" class="w-24 h-24 mb-4">
+                <h3 class="text-xl font-bold mb-2">GitHub</h3>
+                <p class="text-gray-600 text-center">公開リポジトリが少ないのであまり活動してないように見えますがちゃんとやってますよ！？</p>
+            </a>
+            <a href="https://discordapp.com/users/738375557271519233" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
+                <img src="discord.png" alt="Discord" class="w-24 h-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Discord</h3>
+                <p class="text-gray-600 text-center">連絡がある場合はこちらでお願いします！</p>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="bg-gray-800 py-8">
-        <div class="container mx-auto px-4 text-center text-white">
-            &copy; 2024 - Kuraryu. All rights reserved.
-        </div>
-    </footer>
+<footer class="bg-gray-800 py-8">
+    <div class="container mx-auto px-4 text-center text-white">
+        &copy; 2024 - Kuraryu. All rights reserved.
+    </div>
+</footer>
+<script>
+  // すべての.fade-inクラスを持つ要素を選択
+  const fadeInElements = document.querySelectorAll('.fade-in');
+  
+  // Intersection Observerのコールバック関数
+  const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+          // 要素がビューポートに入った場合
+          if (entry.isIntersecting) {
+              // アニメーションクラスを追加
+              entry.target.classList.add('fade-in-visible');
+              // 要素を監視から解除
+              observer.unobserve(entry.target);
+          }
+      });
+  };
+  
+  // Intersection Observerのオプション
+  const observerOptions = {
+      root: null, // ビューポートをルートとする
+      rootMargin: '0px',
+      threshold: 0.1 // 10%の要素が見えたらコールバックを実行
+  };
+  
+  // Intersection Observerのインスタンスを作成
+  const observer = new Intersection Observer(observerCallback, observerOptions);
+  
+  // 監視対象の要素に対して、監視を開始
+  fadeInElements.forEach(element => {
+      observer.observe(element);
+  });
+  </script>  
 </body>
 </html>
