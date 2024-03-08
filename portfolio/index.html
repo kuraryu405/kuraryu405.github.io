@@ -106,7 +106,7 @@
                 <h3 class="text-lg font-bold">PHP</h3>
             </div>
             <div class="text-center">
-                <img src="mysql.png" alt="MySQL" class="w-24 h-24 mx-auto mb-4">
+                <img src="mysql.png" alt="MySQL" class="w-24 h-auto mx-auto mb-4">
                 <h3 class="text-lg font-bold">MySQL</h3>
             </div>
         </div>
@@ -177,9 +177,9 @@
         <p class="text-gray-600 text-center mb-8">X（Twitter）、Githubをフォローしてください！<br>Discordのフレンド申請も歓迎です！</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a href="https://twitter.com/kuraryukun_dayo" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
-                <img src="x.jpg" alt="Twitter" class="w-24 h-24 rounded-full mb-4">
+                <img src="x.jpg" alt="Twitter" class="w-24 h-auto rounded-full mb-4">
                 <h3 class="text-xl font-bold mb-2">Twitter</h3>
-                <p class="text-gray-600 text-center">x(Twotter)のアカウントです！よくつぶやいてます！</p>
+                <p class="text-gray-600 text-center">x(Twitter)のアカウントです！よくつぶやいてます！</p>
             </a>
             <a href="https://github.com/kuraryu405" class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-4 hover:shadow-xl transition-shadow duration-300">
                 <img src="GitHub.png" alt="GitHub" class="w-24 h-24 mb-4">
@@ -200,37 +200,5 @@
         &copy; 2024 - Kuraryu. All rights reserved.
     </div>
 </footer>
-<script>
-  // すべての.fade-inクラスを持つ要素を選択
-  const fadeInElements = document.querySelectorAll('.fade-in');
-  
-  // Intersection Observerのコールバック関数
-  const observerCallback = (entries, observer) => {
-      entries.forEach(entry => {
-          // 要素がビューポートに入った場合
-          if (entry.isIntersecting) {
-              // アニメーションクラスを追加
-              entry.target.classList.add('fade-in-visible');
-              // 要素を監視から解除
-              observer.unobserve(entry.target);
-          }
-      });
-  };
-  
-  // Intersection Observerのオプション
-  const observerOptions = {
-      root: null, // ビューポートをルートとする
-      rootMargin: '0px',
-      threshold: 0.1 // 10%の要素が見えたらコールバックを実行
-  };
-  
-  // Intersection Observerのインスタンスを作成
-  const observer = new Intersection Observer(observerCallback, observerOptions);
-  
-  // 監視対象の要素に対して、監視を開始
-  fadeInElements.forEach(element => {
-      observer.observe(element);
-  });
-  </script>  
 </body>
 </html>
