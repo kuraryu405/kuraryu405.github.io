@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
-    font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Poppins', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
     text-align: center;
-    background-color: #fafafa;
+    background-color: #f4f4f8;
     color: #1a1a1a;
     line-height: 1.6;
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 /* Header Styles */
 header {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -25,24 +25,36 @@ header {
     align-items: center;
 }
 
-/* Navigation Styles */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6366f1;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 nav a {
     text-decoration: none;
     color: #1a1a1a;
     font-weight: 500;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: #6366f1;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
 
 /* Section Styles */
@@ -60,33 +72,6 @@ section:hover {
     transform: translateY(-2px);
 }
 
-/* Footer Styles */
-footer {
-    margin-top: 4rem;
-    padding: 2rem;
-    background: #ffffff;
-    color: #666;
-    border-top: 1px solid #eaeaea;
-    text-align: center;
-}
-
-/* Button Styles */
-.button {
-    padding: 0.8rem 1.6rem;
-    background: linear-gradient(135deg, #6366f1, #4f46e5);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
-}
-
 /* Card Styles */
 .card {
     background: #ffffff;
@@ -94,49 +79,46 @@ footer {
     padding: 1.5rem;
     margin: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Styles */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* Spec Box */
+.spec {
+    background: #f8f9fc;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
 }
 
-/* Responsive Design */
+/* Footer */
+footer {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #ffffff;
+    color: #666;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+        align-items: center;
     }
 
-    nav a {
-        margin-bottom: 0.5rem;
-        width: 100%;
-        text-align: left;
-    }
-
-    section {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-
-    .card {
-        margin: 0.5rem;
+    .menu-icon {
+        display: block;
     }
 }
