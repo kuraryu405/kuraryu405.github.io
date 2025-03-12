@@ -2,99 +2,83 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=!!, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>くらりゅ！</title>
     <link rel="stylesheet" href="style.css">
-
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="motto">
-        <header>
-            <div class="title">
-                <h1>Kuraryu</h1>
-            </div>
+    <header>
+        <div class="logo">Kuraryu</div>
+        <nav>
             <ul>
-                <li><a href="#about" class="btn1">about</a></li>
-                <li><a href="#" class="btn2">hobby</a></li>
-                <li><a href="#" class="btn3">gadget</a></li>
-                <li><a href="#" class="btn4">belong</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+                <li><a href="#gadget">Gadget</a></li>
+                <li><a href="#belong">Belong</a></li>
             </ul>
-        </header>
-    </div>
-    <h1 class="motto">A future you've never experienced beyond the period.</h1>
-    <img src="kuraryu-icon.png" alt="icon1">
-     <section class="about">
-        <a name="about">
-         <img src="kuraryu.png" alt="icon2" class="icon">
-        <div class="about-jikoshokai">
-            <h3>自己紹介</h3>
-            <p>INIAD（東洋大学情報連携学部）に通う大学生です！（４月から）<br>よろしくお願いします！</p>
-        </div>
-        </a>
-        <a name="hobby">
-            <div class="hobby">
-                <h3>趣味</h3>
-                <div class="gadget">
-                    <h4>ガジェット</h4>
-                    <p>スマホ、パソコンやカメラなどガジェット系が好きです！だいたいの質問には答えられるのでぜひ！</p>
-                </div>
-                <div class="music">
-                    <h4>音楽</h4>
-                    <p>クラシック（ウィンドオーケストラ）、ロックどれも好きです！！<br>HIPHOPはあんまり聞きませんがMCバトルはよく見ます！</p>
-                </div> 
-                <div class="photo">
-                    <h4>写真</h4>
-                    <p>物撮りとか風景とかとるのが好きです！</p>
-                </div>
+            <div class="menu-icon">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="fade-in">
+            <img src="kuraryu-icon.png" alt="Kuraryu Icon" class="icon">
+            <div class="about-content">
+                <h3>自己紹介</h3>
+                <p>INIAD（東洋大学情報連携学部）に通う大学生です！（４月から）<br>よろしくお願いします！</p>
             </div>
-        </a>
-        <a name="gadget">
-            <div class="main-pc">
+        </section>
+
+        <section id="hobby" class="fade-in">
+            <h3>趣味</h3>
+            <div class="card"> <h4>ガジェット</h4> <p>スマホ、パソコンやカメラなどが好き！</p> </div>
+            <div class="card"> <h4>音楽</h4> <p>クラシック、ロックが好き！</p> </div>
+            <div class="card"> <h4>写真</h4> <p>物撮りや風景撮影が好き！</p> </div>
+        </section>
+
+        <section id="gadget" class="fade-in">
+            <h3>ガジェット</h3>
+            <div class="card">
                 <h4>メインPC</h4>
-                <img src="main-pc.png" alt="main-pc">
+                <img src="main-pc.jpg" alt="Main PC">
                 <p>高校二年生の頃に自作したメインPCです！</p>
-                <p class="spec-main-pc">スペック<br>CPU:Core i5 13400 <br>RAM:32GB <br>ROM:1TB <br>GPU RX570</p>
+                <p class="spec">CPU: Core i5 13400<br>RAM: 32GB<br>ROM: 1TB<br>GPU: RX570</p>
             </div>
-            <div class="main-notepc">
-                <h4>メインノートPC(Mac)</h4>
-                <img src="main-notepc.png" alt="main-notepc">
-                <p>バッテリー持ちがいいパソコンを探していたらmacbookにたどり着きました</p>
-                <p class="spec-main-notepc">スペック<br>CPU:M4<br>RAM:24GB<br>ROM:512GB</p>
+            <div class="card">
+                <h4>メインノートPC (Mac)</h4>
+                <img src="main-notepc.jpg" alt="Main Notebook PC">
+                <p>バッテリー持ちがいいパソコンを探していたらMacBookにたどり着きました。</p>
+                <p class="spec">CPU: M4<br>RAM: 24GB<br>ROM: 512GB</p>
             </div>
-            <div class="main-notepc-windows">
-                <h4>メインノートPC(Windows)</h4>
-                <img src="main-notepc-windows.png" alt="main-notepc-windows">
-                <p>安くて性能いいパソコンを探してたらこれになりました。<br> デザインは文句あるけど性能は文句ないです</p>
-                <p class="spec-main-notepc-windows">スペック<br>CPU:Ryzen 7 5800H<br>RAM:16GB<br>ROM:512GB</p>
+            <div class="card">
+                <h4>メインノートPC (Windows)</h4>
+                <img src="main-notepc-windows.jpg" alt="Main Notebook PC Windows">
+                <p>安くて性能がいいパソコンを探してたらこれになりました。デザインは微妙だけど性能は満足。</p>
+                <p class="spec">CPU: Ryzen 7 5800H<br>RAM: 16GB<br>ROM: 512GB</p>
             </div>
-            <div class="main-smaho">
+            <div class="card">
                 <h4>メインスマホ</h4>
-                <img src="main-sumaho.png" alt="mainsumaho">
-                <p>Macに乗り換えると同時にiPhoneに乗り換えたかったのでiPhone16にしました！</p>
-                <p class="spec-main-sumaho">スペック<br>CPU:A18<br>RAM:8GB<br>ROM:256GB</p>
+                <img src="main-sumaho.jpg" alt="Main Smartphone">
+                <p>Macに乗り換えると同時にiPhoneに変えました！</p>
+                <p class="spec">CPU: A18<br>RAM: 8GB<br>ROM: 256GB</p>
             </div>
-            <div class="sub-sumaho">
-                <img src="sub-sumaho.png" alt="subsumaho">
-                <p>前のスマホです。バッテリー持ち以外は不満ないです。</p>
+            <div class="card">
+                <h4>サブスマホ</h4>
+                <img src="sub-sumaho.jpg" alt="Sub Smartphone">
+                <p>前のスマホです。バッテリー持ち以外は不満なし。</p>
             </div>
-        </a>
-        
-        <a name="belong">
-            <div class="tgr">
-                <a href="tgrgroup.jp">
-                    <img src="tgr.png" alt="tgr" class="tgrimage">
-                </a>
-            </div>
-            <div class="tekunotes">
-                <a href="tekunotes.com">
-                    <img src="tekunotes.jpg" alt="tekunotes">
-                </a>
-            </div>
-        </a>
-        
-    </section>
-     <footer>
+        </section>
+
+        <section id="belong" class="fade-in">
+            <h3>所属</h3>
+            <div class="card"> <a href="https://tgrgroup.jp">TGR Group</a> </div>
+            <div class="card"> <a href="https://tekunotes.com">Tekunotes</a> </div>
+        </section>
+    </main>
+
+    <footer>
         <p>© 2025 Kuraryu</p>
-     </footer>
+    </footer>
 </body>
 </html>
